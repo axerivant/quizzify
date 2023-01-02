@@ -1,4 +1,4 @@
-export const processSourceLine = (sourceLine: string): string => {
+const processSourceLine = (sourceLine: string): string => {
 	return sourceLine.trim()
 }
 

@@ -12,13 +12,6 @@ const textInput = `
     - Albert Einstein *
     - Richard Feynman
     - Alexander Flemming
-
-3. Who discovered the equation e=mc**2?
-    - BB Issac Newton 
-    - BB Albert Einstein 
-    - BB Richard Feynman *
-    - BB Alexander Flemming
 `
-
-const parsedResult = parse(textInput)
-console.log(parsedResult)
+const titleInput = 'Quiz title'
+const parsedResult = parse('This is the title', textInput)
