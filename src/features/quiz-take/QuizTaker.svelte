@@ -23,10 +23,12 @@
 
 {#if currentState === 'started'}
 	<div>{currentQuestionNum} / {numOfQuestions}</div>
-	<CurrentQuestion
-		index={currentQuestionIndex}
-		{questions}
-		on:prev={previousQuestion}
-		on:next={nextQuestion}
-	/>
+	<div class="w-full m-24">
+		<CurrentQuestion
+			index={currentQuestionIndex}
+			{questions}
+			on:prev={previousQuestion}
+			on:select={nextQuestion}
+		/>
+	</div>
 {/if}

@@ -1,21 +1,20 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte'
+	import { Card } from '@lib/ui'
+	import { fly } from 'svelte/transition'
+	import QuestionOptions from './QuestionOptions.svelte'
 
 	export let question: QuestionSource
-
-	const dispatch = createEventDispatcher()
-
-	// quiz flow command emmitters
-	const emmitNext = () => {
-		dispatch('next')
-	}
-	const emmitPrev = () => {
-		dispatch('prev')
-	}
 </script>
 
-<div>
-	{question.prompt}
-	<button on:click={emmitPrev}>prev</button>
-	<button on:click={emmitNext}>next</button>
-</div>
+{#each [question] as question (question)}
+	<div in:fly={{ x: 1000, delay: 400 }} out:fly={{ x: -1000 }}>
+		<Card tw="w-3/12">
+			<div class="bg-indigo-500 p-3 rounded mb-6 text-indigo-100">
+				{question.prompt}
+			</div>
+			<div class="flex flex-col gap-2">
+				<QuestionOptions options={question.options} on:select />
+			</div>
+		</Card>
+	</div>
+{/each}

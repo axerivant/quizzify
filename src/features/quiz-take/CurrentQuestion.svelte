@@ -10,4 +10,4 @@
 	$: console.log('Current question:  ', index, currentQuestion)
 </script>
 
-<QuestionCard question={currentQuestion} on:prev on:next />
+<QuestionCard question={currentQuestion} on:prev on:next on:select />
