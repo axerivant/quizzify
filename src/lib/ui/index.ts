@@ -1,2 +1,3 @@
 import NavLink from './NavLink.svelte'
-export { NavLink }
+import Background from './Background.svelte'
+export { NavLink, Background }

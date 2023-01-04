@@ -7,7 +7,8 @@
 	const unHover = () => (isHovering = false)
 </script>
 
-<div
+<a
+	href="/quiz/DEV"
 	class="relative bg-700 aspect-square cursor-pointer bgorder-2 transition-all rounded
             {isHovering ? 'border-indigo-500' : 'border-900'}"
 	on:mouseenter={hover}
@@ -27,7 +28,7 @@
 	/>
 
 	<img src={quiz.image} class="absolute w-full h-full z-10" alt="" />
-</div>
+</a>
 
 <style>
 	.isHovering {

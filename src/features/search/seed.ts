@@ -1,6 +1,6 @@
 const Dummies = [
 	{
-		id: '',
+		id: 'DEV',
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -9,7 +9,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -18,7 +18,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -27,7 +27,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -36,7 +36,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -45,7 +45,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -54,7 +54,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {
@@ -63,7 +63,7 @@ const Dummies = [
 		}
 	},
 	{
-		id: '',
+		id: crypto.randomUUID(),
 		title: 'cryptasian albinosours',
 		image: 'https://w0.peakpx.com/wallpaper/882/419/HD-wallpaper-no-mans-sky-in-space-no-mans-sky-games-2019-games.jpg',
 		author: {

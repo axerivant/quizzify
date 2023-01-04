@@ -12,7 +12,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@lib': path.resolve('./src/lib'),
-			'@features': path.resolve('./src/features')
+			'@features': path.resolve('./src/features'),
+			'@backend': path.resolve('./src/backend')
 		}
 	}
 }

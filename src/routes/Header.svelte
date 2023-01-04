@@ -2,7 +2,7 @@
 	import { NavLink } from '$lib/ui'
 </script>
 
-<header class="w-screen px-20 py-16 flex justify-between">
+<header class="w-full flex justify-between">
 	<!-- logo /-->
 	<img src="/assets/logo.svg" alt="" />
 	<!-- nav links /-->
