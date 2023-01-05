@@ -1,4 +1,5 @@
 <script>
+	import { fly } from 'svelte/transition'
 	import { Background } from '@lib/ui'
 	import '../app.css'
 	import Header from './Header.svelte'

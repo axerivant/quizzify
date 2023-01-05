@@ -10,6 +10,11 @@ interface QuizInfo {
 	author: Author
 }
 
+interface AnswerSource {
+	questionIndex: number
+	optionIndex: number
+}
+
 interface QuestionSource {
 	prompt: string
 	options: string[]

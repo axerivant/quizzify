@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CurrentQuestion from './CurrentQuestion.svelte'
+	import Results from './Results.svelte'
 
 	export let quiz: QuizSource
 	console.log('Taking quiz: ', quiz)
@@ -9,15 +10,31 @@
 	// quiz flow state
 	let currentState: 'started' | 'finished' = 'started'
 	let currentQuestionIndex = 0
-	$: currentQuestionNum = currentQuestionIndex + 1
 	let numOfQuestions = questions.length
+
+	$: currentQuestionNum = currentQuestionIndex + 1
+
+	const answers: AnswerSource[] = []
+
 	// quiz flow handlers
 	const previousQuestion = () => {
 		if (currentQuestionIndex - 1 !== -1) currentQuestionIndex--
 	}
-	const nextQuestion = () => {
-		if (currentQuestionIndex + 1 !== questions.length)
-			currentQuestionIndex++
+	const nextQuestion = (ev: CustomEvent) => {
+		const answer: AnswerSource = {
+			questionIndex: currentQuestionIndex,
+			optionIndex: ev.detail
+		}
+		console.log('Added to answers:  ', answers)
+		answers.push(answer)
+		console.log('NEXT')
+
+		if (currentQuestionIndex + 1 === questions.length) {
+			// finish flow
+			currentState = 'finished'
+			console.log('FINISHED')
+			return
+		} else currentQuestionIndex++
 	}
 </script>
 
@@ -31,4 +48,8 @@
 			on:select={nextQuestion}
 		/>
 	</div>
+{/if}
+
+{#if currentState === 'finished'}
+	<Results {questions} {answers} />
 {/if}
