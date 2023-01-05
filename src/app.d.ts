@@ -26,6 +26,6 @@ interface QuizSource {
 	image: string
 	title: string
 	description: string
-	author: Author
+	author?: Author
 	questions: QuestionSource[]
 }

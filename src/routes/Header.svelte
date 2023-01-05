@@ -7,7 +7,7 @@
 	<img src="/assets/logo.svg" alt="" />
 	<!-- nav links /-->
 	<nav class="flex gap-3">
-		<NavLink href="/signup" label="make a quiz" />
+		<NavLink href="/create" label="create a quiz" />
 		<NavLink href="/signup" label="sign in" />
 	</nav>
 </header>

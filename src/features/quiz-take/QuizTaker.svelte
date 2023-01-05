@@ -2,7 +2,7 @@
 	import CurrentQuestion from './CurrentQuestion.svelte'
 	import Results from './Results.svelte'
 
-	export let quiz: QuizSource
+	export let quiz: QuizSource = {}
 	console.log('Taking quiz: ', quiz)
 
 	const { questions } = quiz

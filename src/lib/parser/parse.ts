@@ -1,6 +1,6 @@
 import { tokenize } from './utils'
 
-const parse = (title: string, sourceText: string): QuizSource => {
+const parse = (sourceText: string): QuestionSource[] => {
 	const lines = tokenize(sourceText)
 	const questions = []
 
@@ -33,11 +33,7 @@ const parse = (title: string, sourceText: string): QuizSource => {
 		}
 	}
 
-	const result: QuizSource = {
-		title: title,
-		questions: questions
-	}
-	return result
+	return questions
 }
 
 export default parse
